@@ -39,12 +39,6 @@ button {
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 20%;
 }
-button:active {
-    box-shadow: 1px 1px 2px #fd0c99, 1px 1px 2px #ff00dd;
-    background: none;
-    color: white;
-}
-
 .print {
     width: 85px;
     border-radius: 10px;
@@ -96,7 +90,7 @@ button:active {
     font-family: 'Arvo', serif;
     font-size: 20px;
     color: white;
-margin-top: 200px;
+    margin-top: 200px;
     margin-left: 39%;
     letter-spacing: 5px;
 }
@@ -108,4 +102,101 @@ margin-top: 200px;
     margin-top: 50px;
     margin-left: 37%;
     letter-spacing: 5px;
+}
+
+.red {
+    background-color: crimson;
+}
+.pink {
+    background-color:coral;
+}
+.orange {
+    background-color: orangered;
+}
+.yellow{
+    background-color: yellow;
+}
+.yellowish{
+    background-color: rgb(245, 251, 86);
+}
+.red.active {
+    box-shadow: 1px 1px 5px crimson, 1px 1px 5px crimson;
+    background: none;
+    color: crimson;
+}
+.pink.active{
+    box-shadow: 1px 1px 5px coral, 1px 1px 5px coral;
+    background: none;
+    color: coral;
+}
+.orange.active{
+    box-shadow: 1px 1px 5px orangered, 1px 1px 5px orangered;
+    background: none;
+    color: orangered;
+}
+.yellow.active{
+    box-shadow: 1px 1px 5px yellow, 1px 1px 5px yellow;
+    background: none;
+    color: yellow;
+}
+.yellowish.active{
+    box-shadow: 1px 1px 5px rgb(245, 251, 86), 1px 1px 5px rgb(245, 251, 86);
+    background: none;
+    color: rgb(245, 251, 86);
+}
+
+button:active {
+    animation: effectGeneral 1s ease-in-out;
+}
+
+@keyframes effectGeneral {
+    10%,
+    90% {
+        transform: translate3d(-4px, 0, 0);
+    }
+    
+    20%,
+    80% {
+        transform: translate3d(4px, 0, 0);
+    }
+    
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    
+    40%,
+    60% {
+        transform: translate3d(-4px, 0, 0);
+    }
+}
+
+.active{
+    background-color: #000 !important;
+    animation: effectImportant 0.4s infinite !important;
+}
+
+@keyframes effectImportant {
+
+    10%,
+    90% {
+        transform: translate3d(-2px, 0, 0);
+    }
+
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(-4px, 0, 0);
+    }
 }
