@@ -40,7 +40,7 @@ button {
     border-radius: 20%;
 }
 button:active {
-    box-shadow: 1px 1px 2px #fd0c99, 1px 1px 2px #ff00dd;
+    border: solid 2px white;
     background: none;
     color: white;
 }
