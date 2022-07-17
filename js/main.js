@@ -4,6 +4,9 @@
 // // e.key === a;
 //     console.log(e.keyCode)
 //   })
+//
+//Nu sa primit
+console.log("o")//Ca sa pot face un comit rapid in Git
 const input = document.querySelector("body");
 const begin =  document.querySelector("button")
 input.appendChild(begin);
