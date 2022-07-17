@@ -11,9 +11,9 @@ body {
     margin: 50px 0 0 250px;
 }
 
-.row {
+.row-one,.row-two,.row-three,.row-four {
     width: 100%;
-    height: 60px;
+    height: 65px;
 }
 
 .one,
